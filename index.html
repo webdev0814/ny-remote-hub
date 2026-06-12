@@ -393,6 +393,15 @@
               </div>
             </div>
           `;
+
+          card.addEventListener('click', (e) => {
+            // If they clicked the Apply button or any other interactive element inside it, don't trigger card click
+            if (e.target.closest('a') || e.target.closest('button')) {
+              return;
+            }
+            window.open(job.url, '_blank');
+          });
+
           jobCardsContainer.appendChild(card);
         });
       }
