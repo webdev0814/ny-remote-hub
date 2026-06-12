@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NY Remote Hub | High-Paying Remote Careers</title>
+  <!-- Google Fonts Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <div class="glow-container">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+  </div>
+
+  <header class="app-header">
+    <div class="container header-container">
+      <div class="logo-area">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+        </div>
+        <div>
+          <h1>NY Remote Hub</h1>
+          <p class="subtitle">Premium Remote Careers in New York City & State • $150k+ USD</p>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="badge-dot"></span>
+        <span id="active-jobs-count">0</span> Active Openings
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-layout">
+    <!-- Stats Row -->
+    <section class="stats-grid">
+      <div class="stats-card">
+        <div class="stats-icon text-blue">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <div class="stats-info">
+          <h3>Total Openings</h3>
+          <p class="stats-value" id="stat-total">0</p>
+          <span class="stats-trend">Verified Active</span>
+        </div>
+      </div>
+
+      <div class="stats-card">
+        <div class="stats-icon text-green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+        </div>
+        <div class="stats-info">
+          <h3>Avg Max Salary</h3>
+          <p class="stats-value" id="stat-avg-salary">$0k</p>
+          <span class="stats-trend">High Compensation</span>
+        </div>
+      </div>
+
+      <div class="stats-card">
+        <div class="stats-icon text-purple">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        </div>
+        <div class="stats-info">
+          <h3>NY Local Entities</h3>
+          <p class="stats-value" id="stat-ny-local">0</p>
+          <span class="stats-trend" id="stat-ny-percentage">0% of listings</span>
+        </div>
+      </div>
+
+      <div class="stats-card">
+        <div class="stats-icon text-orange">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <div class="stats-info">
+          <h3>Top Compensation</h3>
+          <p class="stats-value" id="stat-top-salary">$0k</p>
+          <span class="stats-trend">Maximum Range Cap</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters and Content -->
+    <div class="content-wrapper">
+      <!-- Sidebar Filters -->
+      <aside class="sidebar-filters">
+        <div class="filter-section search-section">
+          <label for="search-input">Search Opportunities</label>
+          <div class="search-box">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="search-input" placeholder="Role, company, keywords...">
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label>Geography & Location</label>
+          <div class="checkbox-group">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="filter-ny-only">
+              <span class="checkbox-box"></span>
+              NY Local Entities Only
+            </label>
+            <p class="filter-note">Limits to companies explicitly hiring in NY or local offices.</p>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label>Position Type / Scope</label>
+          <div id="scope-filters" class="checkbox-list">
+            <label class="custom-checkbox">
+              <input type="checkbox" checked value="NY Gov Contract">
+              <span class="checkbox-box"></span>
+              NY Gov Contracts
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" checked value="Other Gov Contract">
+              <span class="checkbox-box"></span>
+              Other Gov Contracts
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" checked value="Public Sector Consultant">
+              <span class="checkbox-box"></span>
+              Public Sector Consultants
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" checked value="General Remote Tech">
+              <span class="checkbox-box"></span>
+              General Remote Tech
+            </label>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="slider-header">
+            <label for="salary-slider">Minimum Salary Cap</label>
+            <span id="salary-value">$150,000</span>
+          </div>
+          <input type="range" id="salary-slider" min="150000" max="250000" step="10000" value="150000">
+          <div class="slider-labels">
+            <span>$150k</span>
+            <span>$200k</span>
+            <span>$250k+</span>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label>Job Source</label>
+          <div id="source-filters" class="checkbox-list">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <label for="sort-select">Sort By</label>
+          <select id="sort-select" class="custom-select">
+            <option value="ny-first">NY Specific First</option>
+            <option value="salary-desc">Highest Salary</option>
+            <option value="date-desc">Newest Listings</option>
+            <option value="title-asc">Job Title (A-Z)</option>
+          </select>
+        </div>
+
+        <button id="reset-filters" class="btn btn-secondary w-100">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px; vertical-align: middle;">
+            <path d="M23 4v6h-6"></path>
+            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+          </svg>
+          Reset All Filters
+        </button>
+      </aside>
+
+      <!-- Main Results Area -->
+      <div class="results-area">
+        <!-- Category Pill Row -->
+        <nav class="category-tabs" id="category-tabs">
+          <button class="category-tab active" data-category="all">All Fields</button>
+          <!-- Populated dynamically -->
+        </nav>
+
+        <!-- Search summary -->
+        <div class="results-header">
+          <p id="results-meta">Showing 0 matching jobs</p>
+        </div>
+
+        <!-- Job Grid -->
+        <div class="job-cards-grid" id="job-cards-container">
+          <!-- Loaded dynamically -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state hidden" id="empty-state">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="8" y1="12" x2="16" y2="12"></line>
+          </svg>
+          <h2>No Matching Positions Found</h2>
+          <p>Try widening your search terms, lowering the salary cap, or resetting filters.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="app-footer-bar">
+    <div class="container footer-content">
+      <p>© 2026 NY Remote Hub • Curated Search System. All rights reserved.</p>
+      <p>Data refreshed automatically from Remotive, Himalayas, Jobicy, and The Muse.</p>
+    </div>
+  </footer>
+
+  <!-- Include compiled jobs data -->
+  <script src="jobs_data.js"></script>
+  
+  <!-- Interactive logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Ensure data exists
+      const jobs = window.jobsData || [];
+      
+      // State variables
+      let activeCategory = 'all';
+      let selectedSources = new Set();
+      let selectedScopes = new Set(['NY Gov Contract', 'Other Gov Contract', 'Public Sector Consultant', 'General Remote Tech']);
+      
+      // DOM Elements
+      const activeJobsCount = document.getElementById('active-jobs-count');
+      const statTotal = document.getElementById('stat-total');
+      const statAvgSalary = document.getElementById('stat-avg-salary');
+      const statNYLocal = document.getElementById('stat-ny-local');
+      const statNYPercentage = document.getElementById('stat-ny-percentage');
+      const statTopSalary = document.getElementById('stat-top-salary');
+      
+      const searchInput = document.getElementById('search-input');
+      const filterNyOnly = document.getElementById('filter-ny-only');
+      const salarySlider = document.getElementById('salary-slider');
+      const salaryValue = document.getElementById('salary-value');
+      const sourceFiltersContainer = document.getElementById('source-filters');
+      const scopeFiltersContainer = document.getElementById('scope-filters');
+      const sortSelect = document.getElementById('sort-select');
+      const resetBtn = document.getElementById('reset-filters');
+      
+      const categoryTabs = document.getElementById('category-tabs');
+      const resultsMeta = document.getElementById('results-meta');
+      const jobCardsContainer = document.getElementById('job-cards-container');
+      const emptyState = document.getElementById('empty-state');
+
+      // Get unique values to initialize filters
+      const categories = [...new Set(jobs.map(j => j.category))].filter(Boolean).sort();
+      const sources = [...new Set(jobs.map(j => j.source))].filter(Boolean).sort();
+      
+      // Init Source Filter checkboxes
+      sources.forEach(src => {
+        selectedSources.add(src);
+        const label = document.createElement('label');
+        label.className = 'custom-checkbox';
+        label.innerHTML = `
+          <input type="checkbox" checked value="${src}">
+          <span class="checkbox-box"></span>
+          ${src}
+        `;
+        sourceFiltersContainer.appendChild(label);
+      });
+
+      // Init Category tab pills
+      categories.forEach(cat => {
+        const btn = document.createElement('button');
+        btn.className = 'category-tab';
+        btn.setAttribute('data-category', cat);
+        btn.textContent = cat;
+        categoryTabs.appendChild(btn);
+      });
+
+      // Listen to scope checkboxes
+      scopeFiltersContainer.addEventListener('change', (e) => {
+        if (e.target.type === 'checkbox') {
+          const val = e.target.value;
+          if (e.target.checked) {
+            selectedScopes.add(val);
+          } else {
+            selectedScopes.delete(val);
+          }
+          updateDashboard();
+        }
+      });
+
+      // Recalculate and display global statistics
+      function calculateStats(filtered) {
+        statTotal.textContent = filtered.length;
+        
+        // Average Max Salary calculation
+        const maxSalaries = filtered.map(j => j.maxSalary).filter(s => s > 0);
+        const avgMax = maxSalaries.length ? Math.round(maxSalaries.reduce((a, b) => a + b, 0) / maxSalaries.length) : 0;
+        statAvgSalary.textContent = avgMax > 0 ? `$${Math.round(avgMax/1000)}k` : '$0k';
+        
+        // NY Specific stats
+        const nyLocalCount = filtered.filter(j => j.isNYSpecific).length;
+        statNYLocal.textContent = nyLocalCount;
+        const pct = filtered.length ? Math.round((nyLocalCount / filtered.length) * 100) : 0;
+        statNYPercentage.textContent = `${pct}% of active matches`;
+
+        // Top cap compensation
+        const topVal = filtered.length ? Math.max(...filtered.map(j => j.maxSalary)) : 0;
+        statTopSalary.textContent = topVal > 0 ? `$${Math.round(topVal/1000)}k` : '$0k';
+      }
+
+      // Render job cards
+      function renderCards(filtered) {
+        jobCardsContainer.innerHTML = '';
+        resultsMeta.textContent = `Showing ${filtered.length} matching position${filtered.length === 1 ? '' : 's'}`;
+
+        if (filtered.length === 0) {
+          emptyState.classList.remove('hidden');
+          return;
+        }
+        emptyState.classList.add('hidden');
+
+        filtered.forEach(job => {
+          const card = document.createElement('article');
+          card.className = `job-card ${job.isNYSpecific ? 'ny-featured' : ''}`;
+          
+          const title = job.title;
+          const company = job.company;
+          const sourceBadge = job.source;
+          const formattedSalary = job.salaryStr || `$${job.minSalary.toLocaleString()} - $${job.maxSalary.toLocaleString()}`;
+          
+          // Generate locations HTML badges
+          const locationBadges = job.locations.map(loc => {
+            const isNY = loc.toLowerCase().includes('new york') || loc.toLowerCase().includes('ny') || loc.toLowerCase() === 'nyc';
+            return `<span class="badge ${isNY ? 'badge-ny' : 'badge-loc'}">${loc}</span>`;
+          }).join(' ');
+
+          // Format Date Posted
+          let timeAgo = 'Recent';
+          if (job.date) {
+            const date = new Date(job.date);
+            const diffDays = Math.round((new Date() - date) / (1000 * 60 * 60 * 24));
+            if (diffDays === 0) timeAgo = 'Today';
+            else if (diffDays === 1) timeAgo = 'Yesterday';
+            else if (diffDays > 0) timeAgo = `${diffDays}d ago`;
+          }
+
+          card.innerHTML = `
+            <div class="card-header">
+              <div class="company-row">
+                <span class="company-name">${company}</span>
+                <span class="source-tag source-${sourceBadge.toLowerCase().replace(/\s+/g, '-')}" title="Aggregated from ${sourceBadge}">${sourceBadge}</span>
+              </div>
+              <h2 class="job-title">${title}</h2>
+              <div style="display: flex; gap: 8px; align-items: center; margin-top: 6px; flex-wrap: wrap;">
+                <span class="category-badge" style="margin-top: 0;">${job.category}</span>
+                <span class="scope-badge scope-${job.scope.toLowerCase().replace(/\s+/g, '-')}">${job.scope}</span>
+              </div>
+            </div>
+            
+            <div class="salary-box">
+              <span class="salary-label">ESTIMATED ANNUAL COMPENSATION</span>
+              <span class="salary-value">${formattedSalary}</span>
+            </div>
+
+            <div class="card-body">
+              <p class="job-snippet">${job.description || 'No description preview available.'}...</p>
+            </div>
+
+            <div class="card-footer">
+              <div class="badge-row">
+                ${locationBadges}
+                ${job.isNYSpecific ? '<span class="badge badge-ny-entity">NY Entity</span>' : ''}
+              </div>
+              <div class="action-row">
+                <span class="time-posted">${timeAgo}</span>
+                <a href="${job.url}" target="_blank" class="btn btn-primary btn-sm">Apply Now</a>
+              </div>
+            </div>
+          `;
+          jobCardsContainer.appendChild(card);
+        });
+      }
+
+      // Filter and Sort Controller
+      function updateDashboard() {
+        const query = searchInput.value.toLowerCase().trim();
+        const nyOnly = filterNyOnly.checked;
+        const minSalaryCap = parseInt(salarySlider.value, 10);
+        const activeSort = sortSelect.value;
+
+        // Apply filters
+        let filtered = jobs.filter(job => {
+          // 1. Search Query
+          if (query) {
+            const matchTitle = job.title.toLowerCase().includes(query);
+            const matchCompany = job.company.toLowerCase().includes(query);
+            const matchDesc = job.description && job.description.toLowerCase().includes(query);
+            if (!matchTitle && !matchCompany && !matchDesc) return false;
+          }
+
+          // 2. Geography filter
+          if (nyOnly && !job.isNYSpecific) return false;
+
+          // 3. Category tabs
+          if (activeCategory !== 'all' && job.category !== activeCategory) return false;
+
+          // 4. Source checkboxes
+          if (!selectedSources.has(job.source)) return false;
+
+          // 4b. Scope checkboxes
+          if (!selectedScopes.has(job.scope)) return false;
+
+          // 5. Salary range slider (ensure max compensation is >= the minimum slider cap)
+          if (job.maxSalary < minSalaryCap) return false;
+
+          return true;
+        });
+
+        // Apply sorts
+        filtered.sort((a, b) => {
+          if (activeSort === 'ny-first') {
+            if (a.isNYSpecific && !b.isNYSpecific) return -1;
+            if (!a.isNYSpecific && b.isNYSpecific) return 1;
+            return b.maxSalary - a.maxSalary; // fallback to high salary
+          }
+          if (activeSort === 'salary-desc') {
+            return b.maxSalary - a.maxSalary;
+          }
+          if (activeSort === 'date-desc') {
+            return new Date(b.date) - new Date(a.date);
+          }
+          if (activeSort === 'title-asc') {
+            return a.title.localeCompare(b.title);
+          }
+          return 0;
+        });
+
+        // Update counts, stats, cards
+        calculateStats(filtered);
+        renderCards(filtered);
+      }
+
+      // DOM Event Listeners
+      searchInput.addEventListener('input', updateDashboard);
+      filterNyOnly.addEventListener('change', updateDashboard);
+      sortSelect.addEventListener('change', updateDashboard);
+      
+      salarySlider.addEventListener('input', (e) => {
+        salaryValue.textContent = `$${parseInt(e.target.value).toLocaleString()}`;
+        updateDashboard();
+      });
+
+      // Source Filters Checklist events
+      sourceFiltersContainer.addEventListener('change', (e) => {
+        if (e.target.type === 'checkbox') {
+          const val = e.target.value;
+          if (e.target.checked) {
+            selectedSources.add(val);
+          } else {
+            selectedSources.delete(val);
+          }
+          updateDashboard();
+        }
+      });
+
+      // Category Tabs Click events
+      categoryTabs.addEventListener('click', (e) => {
+        const tab = e.target.closest('.category-tab');
+        if (tab) {
+          document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          activeCategory = tab.getAttribute('data-category');
+          updateDashboard();
+        }
+      });
+
+      // Reset filters button
+      resetBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        filterNyOnly.checked = false;
+        salarySlider.value = 150000;
+        salaryValue.textContent = '$150,000';
+        activeCategory = 'all';
+        document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+        document.querySelector('.category-tab[data-category="all"]').classList.add('active');
+        
+        // Reset check boxes
+        selectedSources.clear();
+        document.querySelectorAll('#source-filters input[type="checkbox"]').forEach(cb => {
+          cb.checked = true;
+          selectedSources.add(cb.value);
+        });
+
+        // Reset scope checkboxes
+        selectedScopes.clear();
+        document.querySelectorAll('#scope-filters input[type="checkbox"]').forEach(cb => {
+          cb.checked = true;
+          selectedScopes.add(cb.value);
+        });
+
+        sortSelect.value = 'ny-first';
+        updateDashboard();
+      });
+
+      // Initial page setup
+      activeJobsCount.textContent = jobs.length;
+      updateDashboard();
+    });
+  </script>
+</body>
+</html>
