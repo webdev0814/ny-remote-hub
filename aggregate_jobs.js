@@ -510,7 +510,7 @@ async function main() {
   console.log(`Saved jobs to: ${JSON_OUTPUT_PATH}`);
 
   // Write JS Data
-  fs.writeFileSync(path.join(__dirname, 'jobs_data.js'), 'const jobsData = ' + JSON.stringify(filteredJobs, null, 2) + ';', 'utf-8');
+  fs.writeFileSync(path.join(__dirname, 'jobs_data.js'), 'window.jobsData = ' + JSON.stringify(filteredJobs, null, 2) + ';', 'utf-8');
   console.log(`Saved jobs data script to: ${path.join(__dirname, 'jobs_data.js')}`);
 
   // Write CSV

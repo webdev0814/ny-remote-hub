@@ -1,4 +1,4 @@
-const jobsData = [
+window.jobsData = [
   {
     "id": "themuse-21386576",
     "title": "Staff ML Infrastructure Engineer - Embodied AI Offboard Perception",
@@ -37,6 +37,27 @@ const jobsData = [
     "date": "2026-04-22T20:00:54Z",
     "category": "Engineering & Tech",
     "description": "Distinguished Engineer (Remote - Eligible) As a Distinguished Engineer at Capital One, you will be a part of a community of technical experts working to define the future of banking in the cloud. You will work alongside our talented team of developers, machine learning experts, product managers and ",
+    "scope": "General Remote Tech",
+    "isNYSpecific": true
+  },
+  {
+    "id": "themuse-21637950",
+    "title": "Technical Program Management Director",
+    "company": "Salesforce",
+    "locations": [
+      "Atlanta, GA",
+      "Austin, TX",
+      "Flexible / Remote",
+      "New York, NY"
+    ],
+    "salaryStr": "$150,100 - $273,000",
+    "minSalary": 150100,
+    "maxSalary": 273000,
+    "url": "https://www.themuse.com/jobs/salesforce/technical-program-management-director-826d99",
+    "source": "The Muse",
+    "date": "2026-06-12T20:32:57Z",
+    "category": "Marketing & PR",
+    "description": "To get the best candidate experience, please consider applying for a maximum of 3 roles within 12 months to ensure you are not duplicating efforts. Job Category Program &amp; Project Management Job Details About Salesforce Salesforce is the #1 AI CRM, where humans with agents drive customer success ",
     "scope": "General Remote Tech",
     "isNYSpecific": true
   },
@@ -310,7 +331,7 @@ const jobsData = [
     "maxSalary": 220000,
     "url": "https://www.dice.com/job-detail/nys-hbits-expert-cloud-security-architect-tech-valley-talent-albany-ny-12207",
     "source": "Dice (HBITS Prime)",
-    "date": "2026-06-12T18:59:42.231Z",
+    "date": "2026-06-12T20:46:25.647Z",
     "category": "Engineering & Tech",
     "description": "TECH VALLEY TALENT is hiring a fully remote Expert Cloud Security Architect for a New York State (NYS) government contract. Requires 84+ months of experience designing secure AWS cloud architectures, Terraform scripts, and identity access management policies.",
     "isNYSpecific": true,
@@ -367,7 +388,7 @@ const jobsData = [
     "maxSalary": 210000,
     "url": "https://www.dice.com/job-detail/nyc-mta-peoplesoft-developer-iit-inc-new-york-ny-10001",
     "source": "Dice (NYC Vendor)",
-    "date": "2026-06-12T18:59:42.231Z",
+    "date": "2026-06-12T20:46:25.647Z",
     "category": "Engineering & Tech",
     "description": "Seeking an Expert PeopleSoft Developer for a remote contract with the Metropolitan Transportation Authority (MTA) in New York City. Candidate will support PeopleSoft Financials/HRMS upgrade. 84+ months experience required.",
     "isNYSpecific": true,
@@ -386,7 +407,7 @@ const jobsData = [
     "maxSalary": 200000,
     "url": "https://www.dice.com/job-detail/nys-hbits-expert-java-developer-avenues-international-inc-albany-ny-12207",
     "source": "Dice (HBITS Prime)",
-    "date": "2026-06-12T18:59:42.231Z",
+    "date": "2026-06-12T20:46:25.638Z",
     "category": "Engineering & Tech",
     "description": "Seeking an Expert Java Developer / Architect for a 30-month New York State (NYS) HBITS contract. The role is 100% remote. Candidate must have 84+ months of experience in Java/JEE, Spring Boot, Microservices, and cloud database integrations.",
     "isNYSpecific": true,
@@ -462,7 +483,7 @@ const jobsData = [
     "maxSalary": 190000,
     "url": "https://www.dice.com/job-detail/nyc-doitt-senior-systems-engineer-spruce-technology-new-york-ny-10007",
     "source": "Dice (NYC Vendor)",
-    "date": "2026-06-12T18:59:42.231Z",
+    "date": "2026-06-12T20:46:25.647Z",
     "category": "Engineering & Tech",
     "description": "Seeking a fully remote Senior Systems Engineer for a contract engagement with the NYC Department of Information Technology and Telecommunications (DoITT). Requires 7+ years of experience with enterprise systems, Windows/Linux server management, and cloud migration.",
     "isNYSpecific": true,
@@ -481,7 +502,7 @@ const jobsData = [
     "maxSalary": 190000,
     "url": "https://www.dice.com/job-detail/nys-its-expert-mainframe-programmer-cts-albany-ny-12207",
     "source": "Dice (HBITS Prime)",
-    "date": "2026-06-12T18:59:42.231Z",
+    "date": "2026-06-12T20:46:25.647Z",
     "category": "Engineering & Tech",
     "description": "Seeking an Expert Cobol/Mainframe Programmer for a fully remote contract engagement with the NYS Office of Information Technology Services (ITS). Requires 84+ months of experience in COBOL, JCL, CICS, and DB2.",
     "isNYSpecific": true,
@@ -500,7 +521,7 @@ const jobsData = [
     "maxSalary": 185000,
     "url": "https://www.dice.com/job-detail/nys-hbits-expert-oracle-dba-knowledge-builders-inc-albany-ny-12207",
     "source": "Dice (HBITS Prime)",
-    "date": "2026-06-12T18:59:42.231Z",
+    "date": "2026-06-12T20:46:25.647Z",
     "category": "Data & Analytics",
     "description": "Seeking an Expert Oracle DBA for an active New York State agency contract. 100% remote. Requires 84+ months of experience with Oracle database administration, PL/SQL, performance tuning, and backup recovery under the HBITS contract framework.",
     "isNYSpecific": true,
@@ -519,7 +540,7 @@ const jobsData = [
     "maxSalary": 185000,
     "url": "https://www.dice.com/job-detail/nys-ogs-senior-security-mvp-consulting-albany-ny-12207",
     "source": "Dice (HBITS Prime)",
-    "date": "2026-06-12T18:59:42.231Z",
+    "date": "2026-06-12T20:46:25.647Z",
     "category": "Engineering & Tech",
     "description": "Seeking a Senior IT Security Specialist for a fully remote contract with the NYS Office of General Services (OGS). Candidate will support security compliance, vulnerability management, and incident response. 7+ years experience required.",
     "isNYSpecific": true,
@@ -538,7 +559,7 @@ const jobsData = [
     "maxSalary": 180000,
     "url": "https://www.dice.com/job-detail/nyc-h-h-senior-project-manager-voyatek-new-york-ny-10013",
     "source": "Dice (NYC Vendor)",
-    "date": "2026-06-12T18:59:42.231Z",
+    "date": "2026-06-12T20:46:25.647Z",
     "category": "Product & Project Management",
     "description": "Seeking a Senior Project Manager for a fully remote contract doing work for the NYC Health + Hospitals (H+H) electronic medical records system integration. Requires 7+ years PM experience in healthcare IT.",
     "isNYSpecific": true,
@@ -576,7 +597,7 @@ const jobsData = [
     "maxSalary": 175000,
     "url": "https://www.dice.com/job-detail/nys-hbits-expert-net-developer-genesys-consulting-albany-ny-12207",
     "source": "Dice (HBITS Prime)",
-    "date": "2026-06-12T18:59:42.231Z",
+    "date": "2026-06-12T20:46:25.647Z",
     "category": "Engineering & Tech",
     "description": "GENESYS is hiring a fully remote Expert .NET Developer for a 24-month contract with a New York State agency. Requires 84+ months of experience in C#, ASP.NET, MVC, SQL Server, and Web API development.",
     "isNYSpecific": true,
@@ -595,7 +616,7 @@ const jobsData = [
     "maxSalary": 170000,
     "url": "https://www.dice.com/job-detail/nys-doh-expert-ba-cogent-infotech-albany-ny-12207",
     "source": "Dice (HBITS Prime)",
-    "date": "2026-06-12T18:59:42.231Z",
+    "date": "2026-06-12T20:46:25.647Z",
     "category": "Product & Project Management",
     "description": "Seeking an Expert Business Analyst for a New York State Department of Health (DOH) contract. 100% remote. 84+ months experience gathering requirements, writing functional specifications, and conducting user acceptance testing.",
     "isNYSpecific": true,
@@ -720,6 +741,42 @@ const jobsData = [
     "isNYSpecific": false
   },
   {
+    "id": "themuse-21843220",
+    "title": "Director, Enterprise Operations",
+    "company": "DoorDash",
+    "locations": [
+      "Flexible / Remote"
+    ],
+    "salaryStr": "$204,000-$300,000",
+    "minSalary": 204000,
+    "maxSalary": 300000,
+    "url": "https://www.themuse.com/jobs/doordash/director-enterprise-operations",
+    "source": "The Muse",
+    "date": "2026-06-12T19:30:35Z",
+    "category": "Marketing & PR",
+    "description": "About the Team The Enterprise Operations team is the operational backbone of Global IT at DoorDash. We keep employees productive and technology running reliably across DoorDash, Wolt, and Deliveroo, owning everything from service desk delivery and hardware lifecycle management to device supply chain",
+    "scope": "General Remote Tech",
+    "isNYSpecific": false
+  },
+  {
+    "id": "themuse-21843231",
+    "title": "Staff Security Engineer, Customer Support and Integrity",
+    "company": "DoorDash",
+    "locations": [
+      "Flexible / Remote"
+    ],
+    "salaryStr": "$193,800-$285,000",
+    "minSalary": 193800,
+    "maxSalary": 285000,
+    "url": "https://www.themuse.com/jobs/doordash/staff-security-engineer-customer-support-and-integrity",
+    "source": "The Muse",
+    "date": "2026-06-12T19:30:35Z",
+    "category": "Engineering & Tech",
+    "description": "About the Team At DoorDash we're building the industry's most scalable and reliable delivery network to support our three-sided marketplace of consumers, merchants, and Dashers. Security is paramount to the success of our business, and DoorDash Security aspires to be the world's best security team. ",
+    "scope": "General Remote Tech",
+    "isNYSpecific": false
+  },
+  {
     "id": "themuse-21829413",
     "title": "Staff Security Engineer, Proactive Security",
     "company": "DoorDash",
@@ -752,25 +809,6 @@ const jobsData = [
     "date": "2026-05-23T19:12:58Z",
     "category": "Engineering & Tech",
     "description": "About the Team DoorDash's Red Team exists to find critical attack paths before real adversaries do. We operate across the full adversary simulation lifecycle - scoping threat-informed engagements, executing realistic attack chains, and working with engineering and detection teams to close the gaps w",
-    "scope": "General Remote Tech",
-    "isNYSpecific": false
-  },
-  {
-    "id": "themuse-21683551",
-    "title": "Distinguished AI Engineer (Remote)",
-    "company": "Capital One",
-    "locations": [
-      "Flexible / Remote",
-      "McLean, VA"
-    ],
-    "salaryStr": "$244,700 - $279,200",
-    "minSalary": 244700,
-    "maxSalary": 279200,
-    "url": "https://www.themuse.com/jobs/capitalone/distinguished-ai-engineer-remote",
-    "source": "The Muse",
-    "date": "2026-05-09T19:44:17Z",
-    "category": "Engineering & Tech",
-    "description": "Distinguished AI Engineer (Remote) Job Description Overview: At Capital One, we are creating responsible and reliable AI systems, changing banking for good. For years, Capital One has been an industry leader in using machine learning to create real-time, personalized customer experiences. Our invest",
     "scope": "General Remote Tech",
     "isNYSpecific": false
   },
@@ -975,6 +1013,26 @@ const jobsData = [
     "isNYSpecific": false
   },
   {
+    "id": "themuse-21816450",
+    "title": "Regional Sales Manager - East",
+    "company": "SP Industries Inc.",
+    "locations": [
+      "Boston, MA",
+      "Flexible / Remote",
+      "Philadelphia, PA"
+    ],
+    "salaryStr": "$120",
+    "minSalary": 240000,
+    "maxSalary": 240000,
+    "url": "https://www.themuse.com/jobs/spindustriesinc/regional-sales-manager-east",
+    "source": "The Muse",
+    "date": "2026-06-07T00:09:37Z",
+    "category": "Sales & Account Management",
+    "description": "SP Industries Inc ., an ATS company, is searching for a Regional Sales Manager - East to join our team! The Regional Sales Manager - East is responsible for leading and developing a high-performing team of 4-6 Territory Account Managers focused on driving profitable growth across the Life Sciences p",
+    "scope": "General Remote Tech",
+    "isNYSpecific": false
+  },
+  {
     "id": "themuse-21732587",
     "title": "SME Software Engineer Lead",
     "company": "Leidos",
@@ -1025,24 +1083,6 @@ const jobsData = [
     "date": "2026-05-23T19:13:01Z",
     "category": "Engineering & Tech",
     "description": "About the Team At DoorDash we're building the industry's most scalable and reliable delivery network to support our three-sided marketplace of consumers, merchants, and Dashers. Security is paramount to the success of our business, and DoorDash Security aspires to be the world's best security team. ",
-    "scope": "General Remote Tech",
-    "isNYSpecific": false
-  },
-  {
-    "id": "themuse-21724048",
-    "title": "Senior Software Engineer, Infrastructure - Labs",
-    "company": "DoorDash",
-    "locations": [
-      "Flexible / Remote"
-    ],
-    "salaryStr": "$159,800-$235,000",
-    "minSalary": 159800,
-    "maxSalary": 235000,
-    "url": "https://www.themuse.com/jobs/doordash/senior-software-engineer-infrastructure-labs",
-    "source": "The Muse",
-    "date": "2026-05-23T19:12:56Z",
-    "category": "Engineering & Tech",
-    "description": "About the Team DoorDash Labs is an independent team within DoorDash. We are working on building autonomous delivery robots from the ground-up as part of DoorDash's core delivery platform. If you have a passion for applying robotics solutions in a service used by millions of people, then we want to t",
     "scope": "General Remote Tech",
     "isNYSpecific": false
   },
@@ -1134,6 +1174,24 @@ const jobsData = [
     "date": "2026-04-17T19:51:26Z",
     "category": "HR & Operations",
     "description": "Career-defining. Life-changing. At iRhythm, you'll have the opportunity to grow your skills and your career while impacting the lives of people around the world. iRhythm is shaping a future where everyone, everywhere can access the best possible cardiac health solutions. Every day, we collaborate, c",
+    "scope": "General Remote Tech",
+    "isNYSpecific": false
+  },
+  {
+    "id": "themuse-20552796",
+    "title": "Senior Software Engineering Manager, Patient & Provider Experiences",
+    "company": "Labcorp",
+    "locations": [
+      "Flexible / Remote"
+    ],
+    "salaryStr": "$180,000.00 - $220,000.00",
+    "minSalary": 180000,
+    "maxSalary": 220000,
+    "url": "https://www.themuse.com/jobs/labcorp/senior-software-engineering-manager-patient-provider-experiences",
+    "source": "The Muse",
+    "date": "2026-06-12T20:22:55Z",
+    "category": "Engineering & Tech",
+    "description": "Labcorp is a global leader in diagnostic testing and drug development solutions, helping healthcare providers, researchers, and patients make informed decisions that advance care. Join us in our mission to improve health and improve lives. Work Schedule This is a full-time, exempt (salaried) positio",
     "scope": "General Remote Tech",
     "isNYSpecific": false
   },
@@ -1393,24 +1451,6 @@ const jobsData = [
     "isNYSpecific": false
   },
   {
-    "id": "themuse-21641729",
-    "title": "Sr. Security Compliance Specialist",
-    "company": "DoorDash",
-    "locations": [
-      "Flexible / Remote"
-    ],
-    "salaryStr": "$132,600-$195,000",
-    "minSalary": 132600,
-    "maxSalary": 195000,
-    "url": "https://www.themuse.com/jobs/doordash/sr-security-compliance-specialist",
-    "source": "The Muse",
-    "date": "2026-05-23T19:12:57Z",
-    "category": "Legal & Compliance",
-    "description": "About the Team Come help us build the world's most trusted on-demand logistics engine for delivery! We're building a team of great minds to help us secure and maintain a 24x7, no-downtime, global infrastructure system that powers DoorDash's multi-sided marketplace of consumers, merchants, and driver",
-    "scope": "General Remote Tech",
-    "isNYSpecific": false
-  },
-  {
     "id": "themuse-21626708",
     "title": "Managing Engineer - Security",
     "company": "Allstate",
@@ -1477,7 +1517,7 @@ const jobsData = [
     "maxSalary": 192000,
     "url": "https://www.themuse.com/jobs/doordash/enterprise-security-engineer",
     "source": "The Muse",
-    "date": "2026-06-09T19:24:56Z",
+    "date": "2026-06-12T19:30:35Z",
     "category": "Engineering & Tech",
     "description": "About the Team Enterprise Security is the primary point of contact for employee-focused security across DoorDash, Wolt, and Deliveroo. We deliver secure-by-default systems, processes, and controls for everyone who works here, and we build the self-service tooling that makes the secure choice the eas",
     "scope": "General Remote Tech",
@@ -1764,24 +1804,6 @@ const jobsData = [
     "isNYSpecific": false
   },
   {
-    "id": "themuse-21452340",
-    "title": "Manager, Sales Enablement, Commerce Platform",
-    "company": "DoorDash",
-    "locations": [
-      "Flexible / Remote"
-    ],
-    "salaryStr": "$122,400-$180,000",
-    "minSalary": 122400,
-    "maxSalary": 180000,
-    "url": "https://www.themuse.com/jobs/doordash/manager-sales-enablement-commerce-platform",
-    "source": "The Muse",
-    "date": "2026-05-23T19:13:07Z",
-    "category": "Sales & Account Management",
-    "description": "About the Team The Sales Enablement team sits within Sales Strategy &amp; Operations and is responsible for driving measurable productivity improvements across DoorDash's go-to-market organizations. We align enablement priorities to company OKRs and focus on accelerating ramp, improving call executi",
-    "scope": "General Remote Tech",
-    "isNYSpecific": false
-  },
-  {
     "id": "themuse-21830039",
     "title": "Senior Account Based Renewals Representative",
     "company": "Autodesk",
@@ -1814,6 +1836,24 @@ const jobsData = [
     "date": "2026-06-10T18:29:54Z",
     "category": "Sales & Account Management",
     "description": "Coupa makes margins multiply through its community-generated AI and industry-leading total spend management platform for businesses large and small. Coupa AI is informed by trillions of dollars of direct and indirect spend data across a global network of 10M+ buyers and suppliers. We empower you wit",
+    "scope": "General Remote Tech",
+    "isNYSpecific": false
+  },
+  {
+    "id": "jobicy-146257",
+    "title": "Senior Scrum Master",
+    "company": "ManTech",
+    "locations": [
+      "USA"
+    ],
+    "salaryStr": "$113,500.00-$176,500.00",
+    "minSalary": 113500,
+    "maxSalary": 176500,
+    "url": "https://jobicy.com/jobs/146257-senior-scrum-master",
+    "source": "Jobicy",
+    "date": "2026-06-12T16:23:50+00:00",
+    "category": "Product & Project Management",
+    "description": "General information Requisition # R68612 Locations USA-Remote Work Posting Date 06/11/2026 Security Clearance Required Secret Remote Type Fully Remote Time Type Full time Description &amp; Requirements Shape the future of defense with MANTECH! Join a team dedicated to safeguarding our nation through",
     "scope": "General Remote Tech",
     "isNYSpecific": false
   },
@@ -1947,6 +1987,42 @@ const jobsData = [
     "isNYSpecific": false
   },
   {
+    "id": "themuse-21842315",
+    "title": "Travel Construction Manager (Civil Engineer)",
+    "company": "Leidos",
+    "locations": [
+      "Flexible / Remote"
+    ],
+    "salaryStr": "$92,300.00 - $166,850.00",
+    "minSalary": 92300,
+    "maxSalary": 166850,
+    "url": "https://www.themuse.com/jobs/leidos/travel-construction-manager-civil-engineer-8911fb",
+    "source": "The Muse",
+    "date": "2026-06-12T19:02:16Z",
+    "category": "Engineering & Tech",
+    "description": "Description We are seeking a dynamic Travel Construction Manager (Civil Engineer) to support the National Airspace System Integration Support Contract (NISC IV). In this role, you will support the Federal Aviation Administration (FAA) Eastern Service Area (ESA) by providing construction oversight fo",
+    "scope": "Other Gov Contract",
+    "isNYSpecific": false
+  },
+  {
+    "id": "themuse-21668783",
+    "title": "Defined Contribution Customer Solutions Specialist - Virtual",
+    "company": "Alight Solutions LLC",
+    "locations": [
+      "Flexible / Remote"
+    ],
+    "salaryStr": "$150,000 - $180,000 (Est. Senior Market Rate)",
+    "minSalary": 150000,
+    "maxSalary": 165000,
+    "url": "https://www.themuse.com/jobs/alightsolutionsllc/defined-contribution-customer-solutions-specialist-virtual",
+    "source": "The Muse",
+    "date": "2026-06-12T19:17:16Z",
+    "category": "HR & Operations",
+    "description": "Our Story At Alight, we believe a company's success starts with its people. At our core, we Champion People, help our colleagues Grow with Purpose and true to our name we encourage colleagues to \"Be Alight.\" We are passionate about connecting purpose with impact. Alight empowers clients to build a h",
+    "scope": "General Remote Tech",
+    "isNYSpecific": false
+  },
+  {
     "id": "themuse-21841037",
     "title": "Accessories Technical Leader - Product Service Americas",
     "company": "GE Vernova",
@@ -2003,6 +2079,24 @@ const jobsData = [
     "isNYSpecific": false
   },
   {
+    "id": "jobicy-146314",
+    "title": "Director of Career Services",
+    "company": "California Institute of Applied Technology",
+    "locations": [
+      "USA"
+    ],
+    "salaryStr": "$150,000 - $180,000 (Est. Senior Market Rate)",
+    "minSalary": 150000,
+    "maxSalary": 165000,
+    "url": "https://jobicy.com/jobs/146314-director-of-career-services",
+    "source": "Jobicy",
+    "date": "2026-06-12T16:44:57+00:00",
+    "category": "Other Professional",
+    "description": "Description Job Title: Director of Career Services Status: Exempt Location: WFH flexible, candidate must reside in California to be considered. Reports to: VP, Compliance Employment Type: Full-time Summary Under the general direction of the Vice President of Compliance (VPC), the Director of Career ",
+    "scope": "General Remote Tech",
+    "isNYSpecific": false
+  },
+  {
     "id": "himalayas-https://himalayas.app/companies/monetizemore/jobs/director-of-engineering-2726636277",
     "title": "Director of Engineering",
     "company": "MonetizeMore",
@@ -2053,25 +2147,6 @@ const jobsData = [
     "date": "2026-06-11T23:31:38Z",
     "category": "Sales & Account Management",
     "description": "Sonatype is the software supply chain security company. We provide the world’s best end-to-end software supply chain security solution, combining the only proactive protection against malicious open source, the only enterprise grade SBOM management and the leading open source dependency management p",
-    "scope": "General Remote Tech",
-    "isNYSpecific": false
-  },
-  {
-    "id": "themuse-21366920",
-    "title": "ZRA Specialist",
-    "company": "Zoom",
-    "locations": [
-      "Flexible / Remote",
-      "Tokyo, Japan"
-    ],
-    "salaryStr": "$150,000 - $180,000 (Est. Senior Market Rate)",
-    "minSalary": 150000,
-    "maxSalary": 165000,
-    "url": "https://www.themuse.com/jobs/zoom/zra-specialist",
-    "source": "The Muse",
-    "date": "2026-06-11T19:29:41Z",
-    "category": "Data & Analytics",
-    "description": "What you can expect You are the field-facing expert on Zoom Revenue Accelerator (ZRA) - Zoom's AI-powered platform for revenue teams. Sales teams bring you in when customers want to see how AI can transform their sales processes. This quota-carrying role combines consultative enterprise selling with",
     "scope": "General Remote Tech",
     "isNYSpecific": false
   },
@@ -2686,29 +2761,6 @@ const jobsData = [
     "date": "2026-06-03T18:30:33Z",
     "category": "Engineering & Tech",
     "description": "Job Description Summary As a Senior Licensing Engineer, you will be responsible for ensuring compliance with Polish and international nuclear safety regulations related to accident analysis and licensing for GVH reactors in Poland. You will interact with the National Atomic Energy Agency (Państwowa ",
-    "scope": "General Remote Tech",
-    "isNYSpecific": false
-  },
-  {
-    "id": "themuse-21804640",
-    "title": "Senior Data Solutions Analyst: Operational Data & Reporting team",
-    "company": "Liberty Mutual Insurance",
-    "locations": [
-      "Boston, MA",
-      "Columbus, OH",
-      "Flexible / Remote",
-      "Plano, TX",
-      "Portsmouth, NH",
-      "Seattle, WA"
-    ],
-    "salaryStr": "$150,000 - $180,000 (Est. Senior Market Rate)",
-    "minSalary": 150000,
-    "maxSalary": 165000,
-    "url": "https://www.themuse.com/jobs/libertymutualinsurance/senior-data-solutions-analyst-operational-data-reporting-team-8ecc6b",
-    "source": "The Muse",
-    "date": "2026-06-02T19:52:55Z",
-    "category": "Data & Analytics",
-    "description": "Description About the Team - USRM Data Office Ensuring that data is a competitive differentiator for our enterprise, the USRM Data Office sets strategic data product visions, governs data for quality and compliance, develops best in class data and reporting solutions, and continuously seeks to optim",
     "scope": "General Remote Tech",
     "isNYSpecific": false
   },
@@ -4677,24 +4729,6 @@ const jobsData = [
     "date": "2026-06-02T23:36:59Z",
     "category": "HR & Operations",
     "description": "1 in 4 people in the US have a treatable mental health condition, but most providers don't accept insurance, making therapy too expensive for most people. Headway’s mission is to fix this by building a new mental healthcare system everyone can access. We started by solving the biggest barrier to car",
-    "scope": "General Remote Tech",
-    "isNYSpecific": false
-  },
-  {
-    "id": "themuse-21611003",
-    "title": "Senior Immigration Program Manager",
-    "company": "DoorDash",
-    "locations": [
-      "Flexible / Remote"
-    ],
-    "salaryStr": "$105,400-$155,000",
-    "minSalary": 105400,
-    "maxSalary": 155000,
-    "url": "https://www.themuse.com/jobs/doordash/senior-immigration-program-manager",
-    "source": "The Muse",
-    "date": "2026-05-23T19:12:58Z",
-    "category": "Product & Project Management",
-    "description": "About the Team At DoorDash, our people are at the heart of everything we do. With operations spanning 40+ countries, ensuring smooth and compliant immigration is critical to our growth. The Global Immigration pillar within our Global Mobility &amp; Immigration (GMI) team manages immigration strategy",
     "scope": "General Remote Tech",
     "isNYSpecific": false
   },
