@@ -295,7 +295,7 @@ async function fetchFromRemotive() {
         source: 'Remotive',
         date: j.publication_date,
         category: normalizeCategory(j.category, j.title),
-        description: cleanDesc.substring(0, 300)
+        description: cleanDesc
       };
     });
   } catch (e) {
@@ -340,7 +340,7 @@ async function fetchFromJobicy() {
         source: 'Jobicy',
         date: j.pubDate,
         category: normalizeCategory(j.jobIndustry, j.jobTitle),
-        description: cleanDesc.substring(0, 300)
+        description: cleanDesc
       };
     });
   } catch (e) {
@@ -384,7 +384,7 @@ async function fetchFromHimalayas() {
         source: 'Himalayas',
         date: j.pubDate ? new Date(j.pubDate * 1000).toISOString() : new Date().toISOString(),
         category: normalizeCategory((j.categories || []).join(' '), j.title),
-        description: cleanDesc.substring(0, 300)
+        description: cleanDesc
       };
     });
   } catch (e) {
@@ -415,7 +415,7 @@ async function fetchPageFromTheMuse(location, page) {
         source: 'The Muse',
         date: j.publication_date,
         category: normalizeCategory((j.categories || []).map(c => c.name).join(' '), j.name),
-        description: cleanDesc.substring(0, 300)
+        description: cleanDesc
       };
     });
   } catch (e) {
@@ -475,6 +475,15 @@ async function main() {
       break;
     }
 
+    // Stop pagination if all jobs on this page are already older than 48 hours
+    const fortyEightHoursAgo = new Date(Date.now() - 48 * 60 * 60 * 1000);
+    const allOlderThan48h = pageJobs.every(j => j.date && new Date(j.date) < fortyEightHoursAgo);
+    if (allOlderThan48h) {
+      console.log("All jobs on this page are older than 48 hours. Stopping Muse fetch.");
+      allJobs = allJobs.concat(pageJobs);
+      break;
+    }
+
     allJobs = allJobs.concat(pageJobs);
     musePage++;
     
@@ -504,6 +513,13 @@ async function main() {
     if (b.maxSalary !== a.maxSalary) return b.maxSalary - a.maxSalary;
     return new Date(b.date) - new Date(a.date);
   });
+
+  // Truncate descriptions to 300 characters for output
+  for (const job of filteredJobs) {
+    if (job.description) {
+      job.description = job.description.substring(0, 300);
+    }
+  }
 
   // Write JSON
   fs.writeFileSync(JSON_OUTPUT_PATH, JSON.stringify(filteredJobs, null, 2), 'utf-8');
@@ -552,6 +568,15 @@ function filterJobs(jobs) {
     const key = `${title.toLowerCase().replace(/[^a-z0-9]/g, '')}-${company.toLowerCase().replace(/[^a-z0-9]/g, '')}`;
     if (seenKeys.has(key)) continue;
 
+    // Date Check: Must be 48 hours old or newer
+    if (job.date) {
+      const jobDate = new Date(job.date);
+      const fortyEightHoursAgo = new Date(Date.now() - 48 * 60 * 60 * 1000);
+      if (jobDate < fortyEightHoursAgo) {
+        continue;
+      }
+    }
+
     const locations = job.locations || [];
     
     // 1. Strict Remote Check: Must have remote in locations/desc AND no hybrid/onsite mentions
@@ -559,9 +584,10 @@ function filterJobs(jobs) {
     const hasRemoteLoc = locs.some(l => l.includes('remote') || l.includes('flexible') || l === 'work from home' || l === 'wfh');
     
     const desc = (job.description || '').toLowerCase();
-    const hasRemoteDesc = desc.includes('remote job') || desc.includes('work from home') || desc.includes('work-from-home') || desc.includes('fully remote') || desc.includes('100% remote') || desc.includes('wfh');
+    const hasRemoteDesc = desc.includes('remote job') || desc.includes('work from home') || desc.includes('work-from-home') || desc.includes('fully remote') || desc.includes('100% remote') || desc.includes('wfh') || desc.includes('remote position') || desc.includes('remote role') || desc.includes('remote work');
     
-    if (!hasRemoteLoc && !hasRemoteDesc) continue;
+    const isDedicatedRemoteSource = ['Remotive', 'Jobicy', 'Himalayas'].includes(job.source);
+    if (!isDedicatedRemoteSource && !hasRemoteLoc && !hasRemoteDesc) continue;
 
     // Reject hybrid or onsite keywords unless explicitly cleared (e.g. "100% remote" or "no hybrid")
     const hybridKeywords = ['hybrid', 'onsite', 'on-site', 'in-office', 'in office', 'office presence', 'report to office', 'relocate', 'commute'];
