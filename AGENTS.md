@@ -21,7 +21,7 @@
 ## 3. Setup & Execution Commands
 ### Environment Setup & Installation
 ```bash
-python -m venv .venv; .venv\Scripts\activate (Windows) or source .venv/bin/activate (Linux/Mac)
+python3 -m venv .venv && source .venv/bin/activate (Linux/Mac) or .venv\Scripts\activate (Windows)
 pip install -r requirements.txt
 ```
 
@@ -39,6 +39,9 @@ pip install -r requirements.txt
 
 ## 4. Recent Commit Activity (Where We Left Off)
 The most recent commits show the latest development trajectory:
+- `[34ae98e]` (2026-09-04) docs: add comprehensive agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
+- `[7c83a10]` (2026-09-04) docs: add comprehensive agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
+- `[dbdf57d]` (2026-09-04) docs: add comprehensive agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
 - `[fc8eab1]` (2026-09-04) docs: add comprehensive agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
 - `[fea4662]` (2026-09-04) docs: add comprehensive agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
 - `[c437252]` (2026-09-04) docs: add comprehensive agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
@@ -46,8 +49,6 @@ The most recent commits show the latest development trajectory:
 - `[0fdbc2d]` (2026-06-16) Update aggregator to filter jobs to 48 hours or newer
 - `[388a254]` (2026-06-12) Make the entire job card clickable to improve UX
 - `[4dd2f15]` (2026-06-12) Add cache buster query parameter to jobs_data.js script tag in index.html
-- `[54bdb04]` (2026-06-12) Fix global scope assignment for jobsData in aggregate_jobs.js and update index.html/style.css with scope badges
-- `[af01b42]` (2026-06-12) Initial commit of NY Remote Hub dashboard
 
 ---
 
