@@ -39,6 +39,9 @@ pip install -r requirements.txt
 
 ## 4. Recent Commit Activity (Where We Left Off)
 The most recent commits show the latest development trajectory:
+- `[7d775bd]` (2026-09-08) docs: update agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
+- `[01f5c65]` (2026-09-08) docs: update agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
+- `[8bbcbf2]` (2026-09-08) docs: update agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
 - `[34ae98e]` (2026-09-04) docs: add comprehensive agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
 - `[7c83a10]` (2026-09-04) docs: add comprehensive agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
 - `[dbdf57d]` (2026-09-04) docs: add comprehensive agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
@@ -46,9 +49,6 @@ The most recent commits show the latest development trajectory:
 - `[fea4662]` (2026-09-04) docs: add comprehensive agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
 - `[c437252]` (2026-09-04) docs: add comprehensive agent briefing (AGENTS.md, GEMINI.md, CLAUDE.md)
 - `[cf1c0d9]` (2026-06-16) Filter out dead links and remove expired curated government contract listings
-- `[0fdbc2d]` (2026-06-16) Update aggregator to filter jobs to 48 hours or newer
-- `[388a254]` (2026-06-12) Make the entire job card clickable to improve UX
-- `[4dd2f15]` (2026-06-12) Add cache buster query parameter to jobs_data.js script tag in index.html
 
 ---
 
