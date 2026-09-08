@@ -39,6 +39,9 @@ pip install -r requirements.txt
 
 ## 4. Recent Commit Activity (Where We Left Off)
 The most recent commits show the latest development trajectory:
+- `[11e16b4]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
+- `[9e1ce09]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
+- `[696e537]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
 - `[1a5fe21]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
 - `[4831283]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
 - `[ee58df4]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
@@ -46,9 +49,6 @@ The most recent commits show the latest development trajectory:
 - `[ee3f806]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
 - `[55da3f8]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
 - `[f45d7fa]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
-- `[667446c]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
-- `[a90620b]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
-- `[ea5e917]` (2026-09-08) docs: update agent briefing with multi-computer handoff protocol
 
 ---
 
